@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9de3ce"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/appBar"
+            android:text="@string/category_colors"
+            style="@style/appBar"/>
+    </android.support.v7.widget.Toolbar>
+
+</android.support.constraint.ConstraintLayout>

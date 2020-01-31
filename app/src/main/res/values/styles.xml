@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+<!--        <item name="colorPrimary">@color/primary_color</item>-->
+        <item name="colorPrimary">@color/primary_color</item>
+<!--        <item name="colorPrimaryDark">@color/primary_dark_color</item>-->
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+    </style>
+
+    <!-- Style for a category of vocabulary words -->
+    <style name="CategoryStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAlignment" tools:ignore="NewApi">center</item>
+    </style>
+
+    <style name="appBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAlignment" tools:ignore="NewApi">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="Theme.Design" parent="Base.Theme.Design">
+    </style>
+
+    <style name="Base.Theme.Design" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#9de3ce</item>
+        <item name="colorPrimaryDark">#9de3ce</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+</resources>

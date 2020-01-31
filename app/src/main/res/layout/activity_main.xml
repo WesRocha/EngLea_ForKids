@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.miwok.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9de3ce">
+
+        <TextView
+            android:id="@+id/appBar"
+            android:text="@string/app_name"
+            style="@style/appBar"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_shadow_white"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:elevation="2dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_height="match_parent"
+            style="@style/CategoryStyle"
+            android:text="@string/category_numbers"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/CategoryStyle"
+            android:src="@drawable/numbers"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/layout_shadow_white"
+        android:orientation="horizontal"
+        android:elevation="2dp"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:layout_height="match_parent"
+            style="@style/CategoryStyle"
+            android:text="@string/category_family"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/CategoryStyle"
+            android:src="@drawable/family"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/layout_shadow_white"
+        android:orientation="horizontal"
+        android:elevation="2dp"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:layout_height="match_parent"
+            style="@style/CategoryStyle"
+            android:text="@string/category_colors"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/CategoryStyle"
+            android:src="@drawable/colors"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phrases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_shadow_white"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:onClick="openPhrasesList"
+        android:elevation="2dp"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:layout_height="match_parent"
+            style="@style/CategoryStyle"
+            android:text="@string/category_phrases"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="@style/CategoryStyle"
+            android:src="@drawable/phrases"/>
+
+    </LinearLayout>
+
+</LinearLayout>
