@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.LogPrinter;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -16,25 +18,30 @@ public class NumberActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number);
 
-        ArrayList<String> words = new ArrayList<>();     //        String[] words = new String[10];
+        ArrayList<Word> words = new ArrayList<Word>();     //        String[] words = new String[10];
 
-        words.add("one");        //        words[0] = "one";
-        words.add("two");        //        words[1] = "two";
-        words.add("three");      //        words[2] = "three";
-        words.add("four");       //        words[3] = "four";
-        words.add("five");       //        words[4] = "five";
-        words.add("six");        //        words[5] = "six";
-        words.add("seven");      //        words[6] = "seven";
-        words.add("eight");      //        words[7] = "eight";
-        words.add("nine");       //        words[8] = "nine";
-        words.add("ten");        //        words[9] = "ten";
+        words.add(new Word("Um", "One"));
+        words.add(new Word("Dois", "Two"));
+        words.add(new Word("Três", "Three"));
+        words.add(new Word("Quatro", "Four"));
+        words.add(new Word("Cinco", "Five"));
+        words.add(new Word("Seis", "Six"));
+        words.add(new Word("Sete", "Seven"));
+        words.add(new Word("Oito", "Eight"));
+        words.add(new Word("Nove", "Nine"));
+        words.add(new Word("Dez", "Ten"));
 
-        LinearLayout numbersFather = (LinearLayout) findViewById(R.id.numbersFather);
-        int i;
-        for (i = 0; i < words.size(); i++){
-            TextView wordView = new TextView(this);
-            wordView.setText(words.get(i));
-            numbersFather.addView(wordView);
-        }
+        WordAdapter adapter = new WordAdapter(this, words);
+
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(adapter);
+
+//        LinearLayout numbersFather = (LinearLayout) findViewById(R.id.numbersFather);
+//        int i;
+//        for (i = 0; i < words.size(); i++){
+//            TextView wordView = new TextView(this);
+//            wordView.setText(words.get(i));
+//            numbersFather.addView(wordView);
+//        }
     }
 }
