@@ -3,20 +3,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/english_text_view"
-        android:layout_width="match_parent"
+    <LinearLayout
         android:layout_height="wrap_content"
-        tools:text="lutti"/>
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
 
-    <TextView
-        android:id="@+id/portugues_text_view"
-        android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/portugues_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            tools:text="one"/>
+
+        <TextView
+            android:id="@+id/english_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            tools:text="lutti"/>
+    </LinearLayout>
+
+    <ImageView
         android:layout_height="wrap_content"
-        tools:text="one"/>
+        android:layout_width="0dp"
+        android:id="@+id/image"
+        android:layout_weight="1" />
 
 </LinearLayout>

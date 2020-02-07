@@ -20,20 +20,20 @@ public class NumberActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();     //        String[] words = new String[10];
 
-        words.add(new Word("Um", "One"));
-        words.add(new Word("Dois", "Two"));
-        words.add(new Word("Três", "Three"));
-        words.add(new Word("Quatro", "Four"));
-        words.add(new Word("Cinco", "Five"));
-        words.add(new Word("Seis", "Six"));
-        words.add(new Word("Sete", "Seven"));
-        words.add(new Word("Oito", "Eight"));
-        words.add(new Word("Nove", "Nine"));
-        words.add(new Word("Dez", "Ten"));
+        words.add(new Word("Um", "One", R.drawable.audio));
+        words.add(new Word("Dois", "Two", R.drawable.audio));
+        words.add(new Word("Três", "Three", R.drawable.audio));
+        words.add(new Word("Quatro", "Four", R.drawable.audio));
+        words.add(new Word("Cinco", "Five", R.drawable.audio));
+        words.add(new Word("Seis", "Six", R.drawable.audio));
+        words.add(new Word("Sete", "Seven", R.drawable.audio));
+        words.add(new Word("Oito", "Eight", R.drawable.audio));
+        words.add(new Word("Nove", "Nine", R.drawable.audio));
+        words.add(new Word("Dez", "Ten", R.drawable.audio));
 
         WordAdapter adapter = new WordAdapter(this, words);
 
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = (ListView) findViewById(R.id.list_number);
         listView.setAdapter(adapter);
 
 //        LinearLayout numbersFather = (LinearLayout) findViewById(R.id.numbersFather);
