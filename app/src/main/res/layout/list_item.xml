@@ -7,6 +7,12 @@
     android:orientation="horizontal"
     android:padding="16dp">
 
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:id="@+id/image1"
+        android:layout_weight="1" />
+
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="0dp"
@@ -33,7 +39,7 @@
     <ImageView
         android:layout_height="wrap_content"
         android:layout_width="0dp"
-        android:id="@+id/image"
+        android:id="@+id/image2"
         android:layout_weight="1" />
 
 </LinearLayout>

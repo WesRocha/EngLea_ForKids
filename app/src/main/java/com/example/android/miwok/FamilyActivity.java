@@ -15,16 +15,16 @@ public class FamilyActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("Pai", "Father", R.drawable.audio));
-        words.add(new Word("Mãe", "Mother", R.drawable.audio));
-        words.add(new Word("Filho", "Son", R.drawable.audio));
-        words.add(new Word("Filha", "Daughter", R.drawable.audio));
-        words.add(new Word("Irmão mais velho", "Older brother", R.drawable.audio));
-        words.add(new Word("Irmão mais novo", "Younger brother", R.drawable.audio));
-        words.add(new Word("Irmã mais velha", "Older sister", R.drawable.audio));
-        words.add(new Word("Irmã mais nova", "Younger sister", R.drawable.audio));
-        words.add(new Word("Avó", "Grandmother", R.drawable.audio));
-        words.add(new Word("Avõ", "Grandfather", R.drawable.audio));
+        words.add(new Word("Pai", "Father", R.drawable.father, R.drawable.audio));
+        words.add(new Word("Mãe", "Mother", R.drawable.mother, R.drawable.audio));
+        words.add(new Word("Filho", "Son", R.drawable.son, R.drawable.audio));
+        words.add(new Word("Filha", "Daughter", R.drawable.daughter, R.drawable.audio));
+        words.add(new Word("Irmão mais velho", "Older brother", R.drawable.older_brother, R.drawable.audio));
+        words.add(new Word("Irmão mais novo", "Younger brother", R.drawable.younger_brother, R.drawable.audio));
+        words.add(new Word("Irmã mais velha", "Older sister", R.drawable.older_sister, R.drawable.audio));
+        words.add(new Word("Irmã mais nova", "Younger sister", R.drawable.younger_sister, R.drawable.audio));
+        words.add(new Word("Avó", "Grandmother", R.drawable.grandfather, R.drawable.audio));
+        words.add(new Word("Avõ", "Grandfather", R.drawable.grandmother, R.drawable.audio));
 
         WordAdapter adapter1 = new WordAdapter(this, words);
 

@@ -9,12 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.ArrayList;
 
-public class WordAdapter extends ArrayAdapter<Word> {
+public class Word1Adapter extends ArrayAdapter<Word1> {
 
-    public WordAdapter(Activity context, ArrayList<Word> words){
+    public Word1Adapter(Activity context, ArrayList<Word1> words){
         super(context, 0, words);
     }
     @NonNull
@@ -25,7 +24,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        Word currentWord = getItem(position);
+        Word1 currentWord = getItem(position);
 
         TextView englishTextView = (TextView) listItemView.findViewById(R.id.english_text_view);
         englishTextView.setText(currentWord.getEnglishTranslation());
@@ -33,11 +32,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.portugues_text_view);
         defaultTextView.setText(currentWord.getDefaultTranslation());
 
-        ImageView image1 = (ImageView) listItemView.findViewById(R.id.image1);
-        image1.setImageResource(currentWord.getImage());
-
         ImageView image2 = (ImageView) listItemView.findViewById(R.id.image2);
-        image2.setImageResource(currentWord.getImage2());
+        image2.setImageResource(currentWord.getImage());
 
         return listItemView;
     }

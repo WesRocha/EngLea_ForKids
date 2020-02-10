@@ -15,16 +15,16 @@ public class ColorsActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();     //        String[] words = new String[10];
 
-        words.add(new Word("Vermelho", "Red", R.drawable.audio));
-        words.add(new Word("Verde", "Green", R.drawable.audio));
-        words.add(new Word("Marrom", "Brown", R.drawable.audio));
-        words.add(new Word("Cinza", "Gray", R.drawable.audio));
-        words.add(new Word("Preto", "Black", R.drawable.audio));
-        words.add(new Word("Branco", "White", R.drawable.audio));
-        words.add(new Word("Amarelo", "Yellow", R.drawable.audio));
-        words.add(new Word("Rosa", "Pink", R.drawable.audio));
-        words.add(new Word("Blue", "Azul", R.drawable.audio));
-        words.add(new Word("Purple", "Roxo", R.drawable.audio));
+        words.add(new Word("Vermelho", "Red", R.drawable.red, R.drawable.audio));
+        words.add(new Word("Verde", "Green", R.drawable.green, R.drawable.audio));
+        words.add(new Word("Marrom", "Brown", R.drawable.brown, R.drawable.audio));
+        words.add(new Word("Cinza", "Gray", R.drawable.gray, R.drawable.audio));
+        words.add(new Word("Preto", "Black", R.drawable.black, R.drawable.audio));
+        words.add(new Word("Branco", "White", R.drawable.white, R.drawable.audio));
+        words.add(new Word("Amarelo", "Yellow", R.drawable.yellow, R.drawable.audio));
+        words.add(new Word("Rosa", "Pink", R.drawable.pink, R.drawable.audio));
+        words.add(new Word("Azul", "Blue", R.drawable.blue, R.drawable.audio));
+        words.add(new Word("Roxo", "Purple", R.drawable.purple, R.drawable.audio));
 
         WordAdapter adapter = new WordAdapter(this, words);
 

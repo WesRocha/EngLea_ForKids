@@ -20,16 +20,16 @@ public class NumberActivity extends AppCompatActivity {
 
         ArrayList<Word> words = new ArrayList<Word>();     //        String[] words = new String[10];
 
-        words.add(new Word("Um", "One", R.drawable.audio));
-        words.add(new Word("Dois", "Two", R.drawable.audio));
-        words.add(new Word("Três", "Three", R.drawable.audio));
-        words.add(new Word("Quatro", "Four", R.drawable.audio));
-        words.add(new Word("Cinco", "Five", R.drawable.audio));
-        words.add(new Word("Seis", "Six", R.drawable.audio));
-        words.add(new Word("Sete", "Seven", R.drawable.audio));
-        words.add(new Word("Oito", "Eight", R.drawable.audio));
-        words.add(new Word("Nove", "Nine", R.drawable.audio));
-        words.add(new Word("Dez", "Ten", R.drawable.audio));
+        words.add(new Word("Um", "One", R.drawable.one, R.drawable.audio));
+        words.add(new Word("Dois", "Two", R.drawable.two, R.drawable.audio));
+        words.add(new Word("Três", "Three", R.drawable.three, R.drawable.audio));
+        words.add(new Word("Quatro", "Four", R.drawable.four, R.drawable.audio));
+        words.add(new Word("Cinco", "Five", R.drawable.five, R.drawable.audio));
+        words.add(new Word("Seis", "Six", R.drawable.six, R.drawable.audio));
+        words.add(new Word("Sete", "Seven", R.drawable.seven, R.drawable.audio));
+        words.add(new Word("Oito", "Eight", R.drawable.eight, R.drawable.audio));
+        words.add(new Word("Nove", "Nine", R.drawable.nine, R.drawable.audio));
+        words.add(new Word("Dez", "Ten", R.drawable.ten, R.drawable.audio));
 
         WordAdapter adapter = new WordAdapter(this, words);
 
