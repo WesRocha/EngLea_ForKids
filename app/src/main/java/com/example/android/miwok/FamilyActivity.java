@@ -23,8 +23,8 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("Irmão mais novo", "Younger brother", R.drawable.younger_brother, R.drawable.audio));
         words.add(new Word("Irmã mais velha", "Older sister", R.drawable.older_sister, R.drawable.audio));
         words.add(new Word("Irmã mais nova", "Younger sister", R.drawable.younger_sister, R.drawable.audio));
-        words.add(new Word("Avó", "Grandmother", R.drawable.grandfather, R.drawable.audio));
-        words.add(new Word("Avõ", "Grandfather", R.drawable.grandmother, R.drawable.audio));
+        words.add(new Word("Avó", "Grandmother", R.drawable.grandmother, R.drawable.audio));
+        words.add(new Word("Avô", "Grandfather", R.drawable.grandfather, R.drawable.audio));
 
         WordAdapter adapter1 = new WordAdapter(this, words);
 
