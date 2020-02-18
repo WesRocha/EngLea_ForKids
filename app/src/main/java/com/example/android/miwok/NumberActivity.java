@@ -17,8 +17,18 @@ import java.util.ArrayList;
 
 public class NumberActivity extends AppCompatActivity {
 
+    private MediaPlayer mediaPlayer;
+
+    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mediaPlayer) {
+            releaseMediaPlayer();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_number);
 
@@ -44,17 +54,20 @@ public class NumberActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Word word = words.get(i);
-                MediaPlayer mediaPlayer = MediaPlayer.create(NumberActivity.this, word.getmAudioId());
+
+                releaseMediaPlayer();
+
+                mediaPlayer = MediaPlayer.create(NumberActivity.this, word.getmAudioId());
                 mediaPlayer.start();
+                mediaPlayer.setOnCompletionListener(mCompletionListener);
             }
         });
+    }
 
-//        LinearLayout numbersFather = (LinearLayout) findViewById(R.id.numbersFather);
-//        int i;
-//        for (i = 0; i < words.size(); i++){
-//            TextView wordView = new TextView(this);
-//            wordView.setText(words.get(i));
-//            numbersFather.addView(wordView);
-//        }
+    private void releaseMediaPlayer(){
+        if (mediaPlayer != null){
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
     }
 }
