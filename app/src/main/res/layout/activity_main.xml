@@ -21,7 +21,7 @@
 
     <LinearLayout
         android:id="@+id/numbers"
-        style="@style/Conteudo" >
+        style="@style/Conteudo">
 
     <TextView
             android:layout_height="match_parent"

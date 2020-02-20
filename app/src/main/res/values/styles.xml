@@ -21,6 +21,8 @@
         <item name="android:textAlignment" tools:ignore="NewApi">center</item>
     </style>
 
+    android:background="@drawable/ripple"
+
     <style name="Conteudo">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
